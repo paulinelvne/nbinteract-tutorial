@@ -1,5 +1,5 @@
 {
-  "base_url": "/user/paulinelvne-nbinteract-tutorial-rjfatd6f/",
+  "base_url": "/binder/jupyter/user/paulinelvne-nbinteract-tutorial-0tbup1bs/",
   "hostname": "0.0.0.0",
   "notebook_dir": "/home/jovyan",
   "password": false,
@@ -7,6 +7,6 @@
   "port": 8888,
   "secure": false,
   "sock": "",
-  "token": "vC8d9G-WRP2kSxURjFSNQg",
-  "url": "http://0.0.0.0:8888/user/paulinelvne-nbinteract-tutorial-rjfatd6f/"
+  "token": "fqGURbsKRvqIj05TYL6uog",
+  "url": "http://0.0.0.0:8888/binder/jupyter/user/paulinelvne-nbinteract-tutorial-0tbup1bs/"
 }
