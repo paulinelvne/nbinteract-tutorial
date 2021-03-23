@@ -36,3 +36,4 @@ TermSocket.open: Opened 1
 [I 13:37:31.794 NotebookApp] Saving file at /Essai.ipynb
 [I 13:38:16.926 NotebookApp] Saving file at /Essai.ipynb
 [I 13:38:59.094 NotebookApp] Saving file at /Essai.ipynb
+[I 13:39:45.413 NotebookApp] Saving file at /Essai.ipynb
