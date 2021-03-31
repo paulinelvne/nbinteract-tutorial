@@ -13616,8 +13616,8 @@ Successfully installed joblib-1.0.1 scikit-learn-0.24.1 sklearn-0.0 threadpoolct
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">en1</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;VL1grF.hdr&quot;</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">options1</span><span class="p">)</span>
-<span class="n">en2</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">name2</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;VL1grF.hdr&quot;</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">options1</span><span class="p">)</span>
-<span class="n">en3</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">name3</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;VL1grF.hdr&quot;</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">options1</span><span class="p">)</span>
+<span class="n">en2</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">name2</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;DARKREF_VL1grF.hdr&quot;</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">options1</span><span class="p">)</span>
+<span class="n">en3</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">name3</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;WHITEREF_VL1grF.hdr&quot;</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">options1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13634,7 +13634,7 @@ Successfully installed joblib-1.0.1 scikit-learn-0.24.1 sklearn-0.0 threadpoolct
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">dossier_courant</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;/home/plavainne/Documents/BIM/06022020/06022020/&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">dossier_courant</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;/home/plavainne/Documents/BIM/nbinteract-tutorial/&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13770,7 +13770,7 @@ Successfully installed joblib-1.0.1 scikit-learn-0.24.1 sklearn-0.0 threadpoolct
     <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
         
         <span class="n">wave_lengths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">wl</span><span class="o">.</span><span class="n">value</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">wl</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]][</span><span class="s1">&#39;content&#39;</span><span class="p">]),</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-        <span class="n">image_path</span> <span class="o">=</span> <span class="n">exp_name1</span><span class="o">.</span><span class="n">value</span><span class="c1">#current_dir.value+exp_name.value+&#39;/capture/&#39;+exp_name.value+&#39;.hdr&#39;</span>
+        <span class="n">image_path</span> <span class="o">=</span> <span class="n">exp_name1</span><span class="o">.</span><span class="n">value</span><span class="c1">#current_dir.value+exp_name1.value+&#39;/capture/&#39;+exp_name1.value+&#39;.hdr&#39;</span>
         <span class="n">dark_ref_path</span> <span class="o">=</span> <span class="n">exp_name2</span><span class="o">.</span><span class="n">value</span><span class="c1">#current_dir.value+exp_name.value+&#39;/capture/DARKREF_&#39;+exp_name.value+&#39;.hdr&#39;</span>
         <span class="n">white_ref_path</span> <span class="o">=</span> <span class="n">exp_name3</span><span class="o">.</span><span class="n">value</span><span class="c1">#current_dir.value+exp_name.value+&#39;/capture/WHITEREF_&#39;+exp_name.value+&#39;.hdr&#39;</span>
         
@@ -13863,168 +13863,6 @@ Successfully installed joblib-1.0.1 scikit-learn-0.24.1 sklearn-0.0 threadpoolct
 </pre></div>
 
     </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">FileUpload</span>
-
-<span class="k">def</span> <span class="nf">on_upload_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">change</span><span class="p">)</span>
-
-<span class="n">upload_btn</span> <span class="o">=</span> <span class="n">FileUpload</span><span class="p">()</span>
-<span class="n">upload_btn</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_upload_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;_counter&#39;</span><span class="p">)</span>
-<span class="n">upload_btn</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
-
-</div>
-
-<div class="output_area">
-
-    
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/ipywidgets/widgets/widget.py</span> in <span class="ansi-cyan-fg">_handle_msg</span><span class="ansi-blue-fg">(self, msg)</span>
-<span class="ansi-green-intense-fg ansi-bold">    674</span>                 <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">&#39;buffer_paths&#39;</span> <span class="ansi-green-fg">in</span> data<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    675</span>                     _put_buffers<span class="ansi-blue-fg">(</span>state<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;buffer_paths&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> msg<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;buffers&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 676</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>set_state<span class="ansi-blue-fg">(</span>state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    677</span> 
-<span class="ansi-green-intense-fg ansi-bold">    678</span>         <span class="ansi-red-fg"># Handle a state request.</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/ipywidgets/widgets/widget.py</span> in <span class="ansi-cyan-fg">set_state</span><span class="ansi-blue-fg">(self, sync_data)</span>
-<span class="ansi-green-intense-fg ansi-bold">    543</span>                     from_json = self.trait_metadata(name, &#39;from_json&#39;,
-<span class="ansi-green-intense-fg ansi-bold">    544</span>                                                     self._trait_from_json)
-<span class="ansi-green-fg">--&gt; 545</span><span class="ansi-red-fg">                     </span>self<span class="ansi-blue-fg">.</span>set_trait<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> from_json<span class="ansi-blue-fg">(</span>sync_data<span class="ansi-blue-fg">[</span>name<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    546</span> 
-<span class="ansi-green-intense-fg ansi-bold">    547</span>     <span class="ansi-green-fg">def</span> send<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> content<span class="ansi-blue-fg">,</span> buffers<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/contextlib.py</span> in <span class="ansi-cyan-fg">__exit__</span><span class="ansi-blue-fg">(self, type, value, traceback)</span>
-<span class="ansi-green-intense-fg ansi-bold">    117</span>         <span class="ansi-green-fg">if</span> type <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    118</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 119</span><span class="ansi-red-fg">                 </span>next<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>gen<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    120</span>             <span class="ansi-green-fg">except</span> StopIteration<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    121</span>                 <span class="ansi-green-fg">return</span> <span class="ansi-green-fg">False</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/traitlets/traitlets.py</span> in <span class="ansi-cyan-fg">hold_trait_notifications</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1129</span>                 <span class="ansi-green-fg">for</span> changes <span class="ansi-green-fg">in</span> cache<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1130</span>                     <span class="ansi-green-fg">for</span> change <span class="ansi-green-fg">in</span> changes<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1131</span><span class="ansi-red-fg">                         </span>self<span class="ansi-blue-fg">.</span>notify_change<span class="ansi-blue-fg">(</span>change<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1132</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1133</span>     <span class="ansi-green-fg">def</span> _notify_trait<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> old_value<span class="ansi-blue-fg">,</span> new_value<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/ipywidgets/widgets/widget.py</span> in <span class="ansi-cyan-fg">notify_change</span><span class="ansi-blue-fg">(self, change)</span>
-<span class="ansi-green-intense-fg ansi-bold">    604</span>                 <span class="ansi-red-fg"># Send new state to front-end</span>
-<span class="ansi-green-intense-fg ansi-bold">    605</span>                 self<span class="ansi-blue-fg">.</span>send_state<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">=</span>name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 606</span><span class="ansi-red-fg">         </span>super<span class="ansi-blue-fg">(</span>Widget<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>notify_change<span class="ansi-blue-fg">(</span>change<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    607</span> 
-<span class="ansi-green-intense-fg ansi-bold">    608</span>     <span class="ansi-green-fg">def</span> __repr__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/traitlets/traitlets.py</span> in <span class="ansi-cyan-fg">notify_change</span><span class="ansi-blue-fg">(self, change)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1174</span>                 c <span class="ansi-blue-fg">=</span> getattr<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> c<span class="ansi-blue-fg">.</span>name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1175</span> 
-<span class="ansi-green-fg">-&gt; 1176</span><span class="ansi-red-fg">             </span>c<span class="ansi-blue-fg">(</span>change<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1177</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1178</span>     <span class="ansi-green-fg">def</span> _add_notifiers<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> handler<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> type<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-80-1fef5c7f8cb5&gt;</span> in <span class="ansi-cyan-fg">on_upload_change</span><span class="ansi-blue-fg">(change)</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> 
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">def</span> on_upload_change<span class="ansi-blue-fg">(</span>change<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> pd<span class="ansi-blue-fg">.</span>read_csv<span class="ansi-blue-fg">(</span>change<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
-<span class="ansi-green-intense-fg ansi-bold">      6</span> upload_btn <span class="ansi-blue-fg">=</span> FileUpload<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, dialect, error_bad_lines, warn_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    608</span>     kwds<span class="ansi-blue-fg">.</span>update<span class="ansi-blue-fg">(</span>kwds_defaults<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    609</span> 
-<span class="ansi-green-fg">--&gt; 610</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> _read<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">,</span> kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    611</span> 
-<span class="ansi-green-intense-fg ansi-bold">    612</span> 
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    460</span> 
-<span class="ansi-green-intense-fg ansi-bold">    461</span>     <span class="ansi-red-fg"># Create the parser.</span>
-<span class="ansi-green-fg">--&gt; 462</span><span class="ansi-red-fg">     </span>parser <span class="ansi-blue-fg">=</span> TextFileReader<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    463</span> 
-<span class="ansi-green-intense-fg ansi-bold">    464</span>     <span class="ansi-green-fg">if</span> chunksize <span class="ansi-green-fg">or</span> iterator<span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    817</span>             self<span class="ansi-blue-fg">.</span>options<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;has_index_names&#34;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> kwds<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;has_index_names&#34;</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    818</span> 
-<span class="ansi-green-fg">--&gt; 819</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_engine <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_make_engine<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>engine<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    820</span> 
-<span class="ansi-green-intense-fg ansi-bold">    821</span>     <span class="ansi-green-fg">def</span> close<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">_make_engine</span><span class="ansi-blue-fg">(self, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1048</span>             )
-<span class="ansi-green-intense-fg ansi-bold">   1049</span>         <span class="ansi-red-fg"># error: Too many arguments for &#34;ParserBase&#34;</span>
-<span class="ansi-green-fg">-&gt; 1050</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> mapping<span class="ansi-blue-fg">[</span>engine<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>f<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>self<span class="ansi-blue-fg">.</span>options<span class="ansi-blue-fg">)</span>  <span class="ansi-red-fg"># type: ignore[call-arg]</span>
-<span class="ansi-green-intense-fg ansi-bold">   1051</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1052</span>     <span class="ansi-green-fg">def</span> _failover_to_python<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, src, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1865</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1866</span>         <span class="ansi-red-fg"># open handles</span>
-<span class="ansi-green-fg">-&gt; 1867</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_open_handles<span class="ansi-blue-fg">(</span>src<span class="ansi-blue-fg">,</span> kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1868</span>         <span class="ansi-green-fg">assert</span> self<span class="ansi-blue-fg">.</span>handles <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span>
-<span class="ansi-green-intense-fg ansi-bold">   1869</span>         <span class="ansi-green-fg">for</span> key <span class="ansi-green-fg">in</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;storage_options&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;encoding&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;memory_map&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;compression&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">_open_handles</span><span class="ansi-blue-fg">(self, src, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1366</span>             compression<span class="ansi-blue-fg">=</span>kwds<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;compression&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1367</span>             memory_map<span class="ansi-blue-fg">=</span>kwds<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;memory_map&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">-&gt; 1368</span><span class="ansi-red-fg">             </span>storage_options<span class="ansi-blue-fg">=</span>kwds<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;storage_options&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1369</span>         )
-<span class="ansi-green-intense-fg ansi-bold">   1370</span> 
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    561</span>         compression<span class="ansi-blue-fg">=</span>compression<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    562</span>         mode<span class="ansi-blue-fg">=</span>mode<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 563</span><span class="ansi-red-fg">         </span>storage_options<span class="ansi-blue-fg">=</span>storage_options<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    564</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    565</span> 
-
-<span class="ansi-green-fg">/srv/conda/envs/notebook/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ansi-cyan-fg">_get_filepath_or_buffer</span><span class="ansi-blue-fg">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    369</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> is_file_like<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    370</span>         msg <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">f&#34;Invalid file path or buffer object type: {type(filepath_or_buffer)}&#34;</span>
-<span class="ansi-green-fg">--&gt; 371</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> ValueError<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    372</span> 
-<span class="ansi-green-intense-fg ansi-bold">    373</span>     return IOArgs(
-
-<span class="ansi-red-fg">ValueError</span>: Invalid file path or buffer object type: &lt;class &#39;traitlets.utils.bunch.Bunch&#39;&gt;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
